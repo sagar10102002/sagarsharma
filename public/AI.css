@@ -116,7 +116,7 @@ nav ul li a:hover::after{
     align-items: center;
     margin: 20px;
 }
-.AIimg{
+.AIv{
     width: 300px;  /* Adjust the size */
     height: auto;  /* Maintain aspect ratio */
     border: 2px solid #000; /* Add a border */
@@ -135,6 +135,7 @@ nav ul li a:hover::after{
     color: #fff;
     transition: background 0.5s;
 }
+
 .AIPRO_list a:hover{
     color: #06859b;
 }
@@ -270,7 +271,8 @@ nav .fa-solid{
         margin: 20px auto;
         width: fit-content;
         border: 1px solid #06859b;
-        padding: 14px 14px;
+        padding: 14px 14px ;
+        padding-bottom: 2px;
         border-radius: 6px;
         text-decoration: none;
         color: #fff;
@@ -281,14 +283,16 @@ nav .fa-solid{
          /* Enables flexbox layout */
         flex-direction: row; /* Default value, arranges items horizontally */
         gap: 10px; /* Adds space between boxes */
+        justify-content: center;
         align-items: center;
         margin: 20px;
     }
-    .AIimg{
+    .AIv{
         width: 300px;  /* Adjust the size */
         height: auto;  /* Maintain aspect ratio */
         border: 2px solid #000; /* Add a border */
         border-radius: 10px; /* Round the corners */
+        
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
     }
     
