@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PROJECT</title>
+    <link rel="stylesheet" href="AI.css">
+    <script src="https://kit.fontawesome.com/9300e057c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="globe_background.mp4" type ="video/mp4">
+        </video>
+        <div class="container">
+            <nav>
+                <img src="S_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="http://127.0.0.1:5501/index.html#header">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html#About">About</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html#Project">Project</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html#Achievements">Achievements</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="AI_PRO">
+            <h1>AI PROJECT</h1>
+        </div>
+        <div class="AIPRO_list">
+            <div>
+                <i>A basic AI chatbot designed to simulate human-like conversations using natural language processing. Built to answer questions, provide assistance, and interact dynamically, this project showcases foundational AI concepts, including intent recognition and response generation. Ideal for customer support, education, or casual interaction, it offers an engaging and interactive user experience.</i>
+            </div>
+            <div>
+                <img src="AICHATBOT1.png" alt="AI CHATBOT IMAGE" class="AIimg">
+            </div>
+            
+            
+            <a href="https://calm-mind.vercel.app" download>View my basic AI Project</a>
+            
+        </div>
+    </div>
+ <footer>
+    <div class="copyright">
+        <p>Copyright © Made by SAGAR </p>
+    </div>
+ </footer>   
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelinks");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>   
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }    
+</script>    
+    
+</body>
+</html>
