@@ -101,6 +101,7 @@ nav ul li a:hover::after{
 .PythonPRO_list{
     margin: 20px auto;
     width: fit-content;
+    height: 325px;
     border: 1px solid #06859b;
     padding: 14px 14px;
     border-radius: 6px;
@@ -270,6 +271,7 @@ nav .fa-solid{
     .PythonPRO_list{
         margin: 20px auto;
         width: fit-content;
+        height: 900px;
         border: 1px solid #06859b;
         padding: 14px 14px ;
         padding-bottom: 2px;
