@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL PROJECT</title>
+    <link rel="stylesheet" href="Python.css">
+    <script src="https://kit.fontawesome.com/9300e057c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="globe_background.mp4" type ="video/mp4">
+        </video>
+        <div class="container">
+            <nav>
+                <img src="S_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="/#header">Home</a></li>
+                    <li><a href="/#About">About</a></li>
+                    <li><a href="/#Project">Project</a></li>
+                    <li><a href="/#Achievements">Achievements</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="Python_PRO">
+            <h1>PYTHON PROJECT</h1>
+        </div>
+        <div class="PythonPRO_list">
+            <a href="files/sql_project.pdf" download>-->Download Python Project PDF</a>
+        </div>
+    </div>
+ <footer>
+    <div class="copyright">
+        <p>Copyright © Made by SAGAR </p>
+    </div>
+ </footer>   
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelinks");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>   
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }    
+</script>  
+
+    
+</body>
+</html>
