@@ -124,7 +124,7 @@ nav ul li a:hover::after{
 }
 .myAch_list img{
     width: 220px;  /* Adjust the size */
-    height: fit-content;  /* Maintain aspect ratio */
+     /* Maintain aspect ratio */
     border: 2px solid #000; /* Add a border */
     border-radius: 10px; /* Round the corners */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
