@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY ACHIEVEMENTS</title>
+    <link rel="stylesheet" href="myAch.css">
+    <script src="https://kit.fontawesome.com/9300e057c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="globe_background.mp4" type ="video/mp4">
+        </video>
+        <div class="container">
+            <nav>
+                <img src="S_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="/#header">Home</a></li>
+                    <li><a href="/#About">About</a></li>
+                    <li><a href="/#Project">Project</a></li>
+                    <li><a href="/#Achievements">Achievements</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="myAch">
+            <h1>MY ACHIEVEMENTS</h1>
+        </div>
+        <div class="myAchRC1">
+            <div class="myAch_list">
+                <img src="DA.png">
+            </div>
+            <div class="myAch_list">
+                <img src="chatbot.png">
+            </div>
+            <div class="myAch_list">
+                <img src="soft.png">
+            </div>
+            <div class="myAch_list">
+                <img src="speech.png">
+            </div>
+             <div class="myAch_list">
+                <img src="model.png">
+            </div>
+        </div>
+        <div class="myAchRC2">
+            <div class="myAch_list">
+                <img src="cognitive.png">
+            </div>
+            <div class="myAch_list">
+                <img src="bach.png">
+            </div>
+            <div class="myAch_list">
+                <img src="cbc.png">
+            </div>
+        </div>
+    </div>
+ 
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelinks");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>   
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }    
+</script>  
+
+    
+</body>
+</html>
