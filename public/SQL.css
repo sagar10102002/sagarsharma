@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     
     margin: 20px auto;
     width: fit-content;
-    height: 325px;
+    height: fit-content;
     border: 1px solid #06859b;
     padding: 14px 14px;
     border-radius: 6px;
@@ -117,6 +117,13 @@ nav ul li a:hover::after{
     gap: 10px; /* Adds space between boxes */
     align-items: center;
     margin: 20px;
+}
+.SQLPRO_list img{
+    width: 40px;
+    border-radius: 10%;
+}
+.olalogo {
+    display: flex;
 }
 .SQLv{
     width: 300px;  /* Adjust the size */
@@ -283,6 +290,13 @@ nav .fa-solid{
         align-items: center;
         margin: 20px;
         
+    }
+    .SQLPRO_list img{
+        width: 80px;
+        border-radius: 10%;
+    }
+    .olalogo {
+        display: flex;
     }
     .SQLPRO_list a{
         margin: 20px auto;

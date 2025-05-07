@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 .PythonPRO_list{
     margin: 20px auto;
     width: fit-content;
-    height: 325px;
+    height: fit-content;
     border: 1px solid #06859b;
     padding: 14px 14px;
     border-radius: 6px;
@@ -116,6 +116,28 @@ nav ul li a:hover::after{
     gap: 10px; /* Adds space between boxes */
     align-items: center;
     margin: 20px;
+}
+
+.PythonPRO_list img{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.PythonPRO_list h1{
+    margin-top: 10px;
+}
+.zomatologo {
+    display: flex;
+}
+.myntralogo{
+    display: flex;
+}
+.sdlogo{
+    display: flex;
+}
+.sdlogo img{
+    width: 110px;
+    height: 60px;
 }
 .Pythonv{
     width: 300px;  /* Adjust the size */
@@ -271,7 +293,7 @@ nav .fa-solid{
     .PythonPRO_list{
         margin: 20px auto;
         width: fit-content;
-        height: 900px;
+        height: fit-content;
         border: 1px solid #06859b;
         padding: 14px 14px ;
         padding-bottom: 2px;
@@ -289,6 +311,29 @@ nav .fa-solid{
         align-items: center;
         margin: 20px;
     }
+    .PythonPRO_list img{
+        width: 120px;
+        height: 120px;
+        margin-right: 5px;
+    }
+    .PythonPRO_list h1{
+        margin-top: 5px;
+    }
+    .zomatologo {
+        display: flex;
+    }
+    .myntralogo {
+        display: flex;
+    }
+    .sdlogo{
+        display: flex;
+    }
+    .sdlogo img{
+        width: 130px;
+        height: 100px;
+    }
+
+
     .Pythonv{
         width: 300px;  /* Adjust the size */
         height: auto;  /* Maintain aspect ratio */
