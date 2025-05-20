@@ -372,7 +372,8 @@ nav .fa-solid{
         transition: background 0.5s;
     }
     .SQLv{
-        width: 343px;  /* Adjust the size */
+        margin-left: 2px;
+        width: 300px;  /* Adjust the size */
         height: auto;  /* Maintain aspect ratio */
         border: 2px solid #000; /* Add a border */
         border-radius: 10px; /* Round the corners */
@@ -382,9 +383,9 @@ nav .fa-solid{
         padding: 15px;
     }
     .SQLv_pbi{
-    
+        margin-left: 2px;
         margin-top: 10px;
-        width: 342px;  /* Adjust the size */
+        width: 301px;  /* Adjust the size */
         height: auto;  /* Maintain aspect ratio */
         border: 2px solid #000; /* Add a border */
         border-radius: 10px; /* Round the corners */
