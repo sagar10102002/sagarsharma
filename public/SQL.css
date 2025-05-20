@@ -122,62 +122,60 @@ nav ul li a:hover::after{
     width: 40px;
     border-radius: 10%;
 }
-.netlogo {
-    display: flex;
-}
-.netlogo img{
-    display: flex;
-    width: 150px;
-}
-.netlogo h1{
-    display: flex;
-    margin-top: 22px;
-}
 .olalogo {
     display: flex;
 }
 .olalogo img{
-    display: flex;
     width: 100px;
+    height: auto;
 }
 .olalogo h1{
-    display: flex;
     margin-top: 28px;
 }
-.netv{
-    padding: 20px;
+.netlogo {
+    display: flex;
+}
+.netlogo img{
+    width: 150px;
+    height: 100px;
+}
+.netlogo h1{
+    margin-top: 27px;
+}
+
+.SQLv{
     width: 300px;  /* Adjust the size */
     height: auto;  /* Maintain aspect ratio */
     border: 2px solid #000; /* Add a border */
     border-radius: 10px; /* Round the corners */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
     border-color: #06859b;
+    padding: 15px;
 }
-
-.SQLv{
-    padding: 20px;
-    width: 600px;  /* Adjust the size */
+.SQLv_pbi{
+    
+    width: 330px;  /* Adjust the size */
     height: auto;  /* Maintain aspect ratio */
     border: 2px solid #000; /* Add a border */
     border-radius: 10px; /* Round the corners */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
     border-color: #06859b;
+    padding: 15px;
 }
-.SQLv_pbi {
-    padding: 20px;
-    width: 670px;  /* Adjust the size */
+.netv{
+    width: 300px;  /* Adjust the size */
     height: auto;  /* Maintain aspect ratio */
     border: 2px solid #000; /* Add a border */
     border-radius: 10px; /* Round the corners */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
     border-color: #06859b;
-    margin-left: 95px;
+    padding: 15px;
 }
 .SQLPRO_list a{
     margin: 20px auto;
     width: fit-content;
     border: 1px solid #06859b;
-    padding: 14px 50px;
+    padding: 14px 20px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -339,9 +337,33 @@ nav .fa-solid{
     .olalogo {
         display: flex;
     }
+    .olalogo img{
+        margin-left: -18px;
+        margin-top: -10px;
+        width: 100px;
+        height: 100px;
+    }
+    .olalogo h1{
+        margin-top: -10px;
+        margin-top: 5px;
+    }
+    .netlogo {
+        display: flex;
+    }
+    .netlogo img{
+        width: 100px;
+        height: 100px;
+    }
+    .netlogo h1{
+        font-size: 17px;
+        margin-top: -10px;
+        margin-top: 30px;
+    }
+
     .SQLPRO_list a{
         margin: 20px auto;
         width: fit-content;
+        height: fit-content;
         border: 1px solid #06859b;
         padding: 14px 14px;
         border-radius: 6px;
@@ -349,56 +371,26 @@ nav .fa-solid{
         color: #fff;
         transition: background 0.5s;
     }
-    .netlogo {
-        display: flex;
+    .SQLv{
+        width: 300px;  /* Adjust the size */
+        height: auto;  /* Maintain aspect ratio */
+        border: 2px solid #000; /* Add a border */
+        border-radius: 10px; /* Round the corners */
+        
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+        border-color: #06859b;
+        padding: 15px;
     }
-    .netlogo img{
-        display: flex;
-        width: 150px;
-    }
-    .netlogo h1{
-        display: flex;
-        margin-top: 22px;
-    }
-    .olalogo {
-        display: flex;
-    }
-    .olalogo img{
-        display: flex;
-        width: 100px;
-    }
-    .olalogo h1{
-        display: flex;
-        margin-top: 28px;
-    }
-    .netv{
-        padding: 20px;
+    .SQLv_pbi{
+    
+        margin-top: 10px;
         width: 300px;  /* Adjust the size */
         height: auto;  /* Maintain aspect ratio */
         border: 2px solid #000; /* Add a border */
         border-radius: 10px; /* Round the corners */
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
         border-color: #06859b;
-    }
-    
-    .SQLv{
-        padding: 20px;
-        width: 600px;  /* Adjust the size */
-        height: auto;  /* Maintain aspect ratio */
-        border: 2px solid #000; /* Add a border */
-        border-radius: 10px; /* Round the corners */
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
-        border-color: #06859b;
-    }
-    .SQLv_pbi {
-        padding: 20px;
-        width: 670px;  /* Adjust the size */
-        height: auto;  /* Maintain aspect ratio */
-        border: 2px solid #000; /* Add a border */
-        border-radius: 10px; /* Round the corners */
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
-        border-color: #06859b;
-        margin-left: 95px;
+        padding: 15px;
     }
 
 }
