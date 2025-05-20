@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 .MLPRO_list{
     margin: 20px auto;
     width: fit-content;
-    height: 325px;
+    height: fit-content;
     border: 1px solid #06859b;
     padding: 14px 14px;
     border-radius: 6px;
@@ -116,6 +116,7 @@ nav ul li a:hover::after{
     gap: 10px; /* Adds space between boxes */
     align-items: center;
     margin: 20px;
+    
 }
 .MLv{
     width: 300px;  /* Adjust the size */
@@ -123,6 +124,18 @@ nav ul li a:hover::after{
     border: 2px solid #000; /* Add a border */
     border-radius: 10px; /* Round the corners */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+    border-color: #06859b;
+    padding: 15px;
+}
+.MVlogo{
+    display: flex;
+}
+.MVlogo img{
+    width: 110px;
+    height: 60px;
+}
+.MVlogo h1{
+    margin-top: 5px;
 }
 
 
@@ -323,6 +336,21 @@ nav .fa-solid{
         border-radius: 10px; /* Round the corners */
         
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+        border-color: #06859b;
+        padding: 15px;
     }
+    .MVlogo{
+        display: flex;
+    }
+    .MVlogo img{
+        width: 110px;
+        height: 80px;
+    }
+    .MVlogo h1{
+        font-size: 25px;
+        margin-top: 3px;
+    }
+    
+    
 
 }
