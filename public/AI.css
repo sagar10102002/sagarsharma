@@ -97,6 +97,9 @@ nav ul li a:hover::after{
     margin-left: 10px;
     color: #06859b;
 }
+.title{
+    color: #06859b;
+}
 
 .AIPRO_list{
     margin: 20px auto;
