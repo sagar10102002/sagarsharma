@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="exp.css">
+    <script src="https://kit.fontawesome.com/9300e057c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="globe_background.mp4" type ="video/mp4">
+        </video>
+        <div class="container">
+            <nav>
+                <img src="S_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="/#header">Home</a></li>
+                    <li><a href="/#About">About</a></li>
+                    <li><a href="/#experience">Experience</a></li>
+                    <li><a href="/#Project">Project</a></li>
+                    <li><a href="/#Achievements">Achievements</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Experience</h1>
+    </div>
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title">AI/ML Intern</div>
+            <div class="experience-date">July 2025 – Dec 2025</div>
+        </div>
+        <div class="experience-company">
+            Weapon and Electronics Systems Engineering Establishment (WESEE), Indian Navy — New Delhi, India
+        </div>
+        <div class="txt">
+            <ul>
+                <li>Collaborated with a team of defense scientists and engineers to develop AI/ML solutions for strategic naval applications.</li>
+                <li>Worked on real-time data analysis, anomaly detection, and predictive modeling using Python, TensorFlow, and Scikit-learn.</li>
+                <li>Developed and optimized deep learning models for sensor data interpretation and maritime object detection.</li>
+                <li>Ensured secure deployment of ML pipelines in high-compliance, defense-grade systems.</li>
+                <li>Contributed to research reports and internal documentation used for strategic planning.</li>
+            </ul>
+        </div>
+        <div class="tech-stack">
+            <strong>Key Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, TensorFlow, Machine learning, Deep learning, LLM, AI.
+        </div>
+    </div>
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title">AI Training</div>
+            <div class="experience-date">July 2025 – Aug 2025</div>
+        </div>
+        <div class="experience-company">
+            International Business Machines(IBM), New Delhi, India
+        </div>
+        <div class="txt">
+            <ul>
+                <li>Completed a certified training program in Machine Learning and Deep Learning conducted by IBM.</li>
+                <li>Built foundational and advanced knowledge in supervised, unsupervised learning, neural networks, and model evaluation.</li>
+                <li>Implemented real-world AI solutions in Python using Scikit-learn, TensorFlow, and IBM Watson Studio.</li>
+                <li>Collaborated with peers on capstone projects to optimize and deploy machine learning models.</li>
+                <li>Contributed to research reports and internal documentation used for strategic planning.</li>
+            </ul>
+        </div>
+        <div class="tech-stack">
+            <strong>Key Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Machine learning, Deep learning.
+        </div>
+    </div>
+  
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelinks");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>   
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }    
+</script> 
+
+    
+</body>
+</html>

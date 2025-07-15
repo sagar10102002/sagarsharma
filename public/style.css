@@ -168,7 +168,10 @@ nav ul li a:hover::after{
 .tab-contents.activetab{
     display: block;
 }
-
+/* ----------------------------------exp-------------------------------*/
+#experience{
+    padding: 30px 0;
+}
 /* -----------------------------------Services-----------------------------*/
 #services{
     padding: 30px 0;
