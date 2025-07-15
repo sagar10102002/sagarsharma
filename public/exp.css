@@ -132,6 +132,11 @@ nav ul li a:hover::after{
 .tech-stack strong {
     color: #00bcd4;
 }
+.title {
+    margin-top: 30px;
+    color: #06859b;
+    margin-left: 28px;
+}
 
 
 form input, form textarea{
