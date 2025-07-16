@@ -6,6 +6,7 @@
     <title>SAGAR_SHARMA</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9300e057c1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="header">
@@ -33,6 +34,17 @@
     
         </div>
     </div>
+      <!-- 🎵 Background Music Audio Tag -->
+    <audio autoplay loop id="bg-music">
+        <source src="Night_Changes.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+     
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" onclick="toggleMusic()">
+        <i class="fa-solid fa-music"></i>
+    </button>
+
 <!-- --------------------about-------------------- -->    
     <div id="About">
         <div class="container">
@@ -214,7 +226,39 @@
         event.currentTarget.classList.add("activelinks");
         document.getElementById(tabname).classList.add("activetab");
     }
-</script>   
+</script> 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("activelinks");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("activetab");
+      }
+      event.currentTarget.classList.add("activelinks");
+      document.getElementById(tabname).classList.add("activetab");
+    }
+
+    function openmenu(){
+      document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closemenu(){
+      document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+    function toggleMusic(){
+      var music = document.getElementById("bg-music");
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>  
 <script>
     var sidemenu = document.getElementById("sidemenu");
 
@@ -226,16 +270,18 @@
         sidemenu.style.right = "-200px";
     }
 </script> 
-<script>
+ <script>
     window.watsonAssistantChatOptions = {
-      integrationID: "047f1a3a-779a-4de5-9562-cc0840049b93", // The ID of this integration.
-      region: "eu-gb", // The region your integration is hosted in.
-      serviceInstanceID: "27c5a250-ec99-4169-9037-d408f654dad7", // The ID of your service instance.
+      integrationID: "047f1a3a-779a-4de5-9562-cc0840049b93",
+      region: "eu-gb",
+      serviceInstanceID: "27c5a250-ec99-4169-9037-d408f654dad7",
       onLoad: async (instance) => { await instance.render(); }
     };
     setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+              (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+              "/WatsonAssistantChatEntry.js";
       document.head.appendChild(t);
     });
   </script>
