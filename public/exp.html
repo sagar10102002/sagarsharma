@@ -39,17 +39,31 @@
         <div class="experience-company">
             Weapon and Electronics Systems Engineering Establishment (WESEE), Indian Navy — New Delhi, India
         </div>
-        <div class="txt">
-            <ul>
-                <li>Collaborated with a team of defense scientists and engineers to develop AI/ML solutions for strategic naval applications.</li>
-                <li>Worked on real-time data analysis, anomaly detection, and predictive modeling using Python, TensorFlow, and Scikit-learn.</li>
-                <li>Developed and optimized deep learning models for sensor data interpretation and maritime object detection.</li>
-                <li>Ensured secure deployment of ML pipelines in high-compliance, defense-grade systems.</li>
-                <li>Contributed to research reports and internal documentation used for strategic planning.</li>
-            </ul>
-        </div>
-        <div class="tech-stack">
-            <strong>Key Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, TensorFlow, Machine learning, Deep learning, LLM, AI.
+        <div class="txt-img">
+            <div class="txt">
+                <ul>
+                    <li>Collaborated with a team of defense scientists and engineers to develop AI/ML solutions for strategic naval applications.</li>
+                    <li>Worked on real-time data analysis, anomaly detection, and predictive modeling using Python, TensorFlow, and Scikit-learn.</li>
+                    <li>Developed and optimized deep learning models for sensor data interpretation and maritime object detection.</li>
+                    <li>Ensured secure deployment of ML pipelines in high-compliance, defense-grade systems.</li>
+                    <li>Contributed to research reports and internal documentation used for strategic planning.</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Key Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, TensorFlow, Machine learning, Deep learning, LLM, AI.
+                </div>
+            </div>
+             <div class="img">
+                <div class="small-box">
+                    <img src="offerletter.png">
+                    <img src="offerletter_backside.png">   
+                </div> 
+            </div>
+            <!-- Image Modal -->
+            <div id="imgModal" class="modal">
+                <span class="close">&times;</span>
+                <img id="imgPreview" class="modal-content" alt="Image preview">
+            </div>
+
         </div>
     </div>
     <div class="experience-card">
@@ -73,8 +87,45 @@
             <strong>Key Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Machine learning, Deep learning.
         </div>
     </div>
-  
- <script>
+ 
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgPreview");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".img img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close when tapping outside the image
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Optional: swipe-to-close for mobile (basic version)
+  let touchStartY = 0;
+  modal.addEventListener('touchstart', e => {
+    touchStartY = e.changedTouches[0].screenY;
+  });
+  modal.addEventListener('touchend', e => {
+    const touchEndY = e.changedTouches[0].screenY;
+    if (touchEndY - touchStartY > 100) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+    
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     
@@ -88,7 +139,8 @@
         event.currentTarget.classList.add("activelinks");
         document.getElementById(tabname).classList.add("activetab");
     }
-</script>   
+</script> 
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
     
