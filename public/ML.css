@@ -131,11 +131,11 @@ nav ul li a:hover::after{
     display: flex;
 }
 .MVlogo img{
-    width: 110px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
 }
 .MVlogo h1{
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 
